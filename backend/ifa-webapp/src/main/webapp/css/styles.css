@@ -13,6 +13,7 @@ body {
     padding-top: 50px;
     /* Margin bottom by footer height */
     margin-bottom: 50px;
+    background-color: #e8dfdf;
 }
 
 /*
@@ -70,7 +71,7 @@ body {
 .nav-sidebar > .active > a:hover,
 .nav-sidebar > .active > a:focus {
     color: #fff;
-    background-color: #428bca;
+    background-color: #efb3b2;
 }
 
 /*
@@ -91,7 +92,7 @@ body {
 }
 
 .table-other {
-    background-color: #e4e6ea;
+    background-color: #d0aeae;
 }
 
 .table-promo {
