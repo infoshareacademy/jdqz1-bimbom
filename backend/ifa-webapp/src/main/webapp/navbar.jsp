@@ -15,8 +15,8 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li><a href="/4analysis">Fundusze inwestycyjne</a></li>
-                <li><a href="/4analysis/pensionfunds">Fundusze emerytalne</a></li>
+                <li><a id="Fundusze_inwest" href="/4analysis">Fundusze inwestycyjne</a></li>
+                <li><a id="Fundusze_emerytalne" href="/4analysis/pensionfunds">Fundusze emerytalne</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <c:choose>
