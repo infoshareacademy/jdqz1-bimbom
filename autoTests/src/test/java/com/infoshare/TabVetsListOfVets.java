@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import static org.junit.Assert.assertTrue;
 
-public class TabVets {
+public class TabVetsListOfVets {
     private WebDriver driver;
 
     @Before
@@ -22,11 +22,9 @@ public class TabVets {
     }
 
     @Test
-    public void tabVets() {
+    public void tabVetsListOfVets() {
         driver.get("http://app.bimbom.jdqz1.is-academy.pl/vets");
-        WebElement openTabVets = driver.findElement(By.xpath("//input[@type='text']"));
-        assertTrue("Tab Vets is not displayed.", openTabVets.isDisplayed());
+        WebElement tabVetsListOfVets = driver.findElement(By.xpath("//span[@class='glyphicon glyphicon-th-list']']"));
+        assertTrue("Tab Vets is not displayed.", tabVetsListOfVets.isDisplayed());
     }
-
-
 }
