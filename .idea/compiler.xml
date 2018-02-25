@@ -7,10 +7,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="autoTests" />
+        <module name="ifa-library" />
+        <module name="ifa-reports" />
+        <module name="ifa-reports-persistence" />
+        <module name="ifa-webapp" />
+        <module name="ifa-webapp-persistence" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="4analysis" target="1.8" />
       <module name="autoTests" target="1.5" />
+      <module name="ifa-library" target="1.8" />
+      <module name="ifa-reports" target="1.8" />
+      <module name="ifa-reports-persistence" target="1.8" />
+      <module name="ifa-webapp" target="1.8" />
+      <module name="ifa-webapp-persistence" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

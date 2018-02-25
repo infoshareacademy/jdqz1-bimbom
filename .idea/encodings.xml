@@ -2,5 +2,11 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/autoTests" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend/ifa-library" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend/ifa-reports" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend/ifa-reports-persistence" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend/ifa-webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/backend/ifa-webapp-persistence" charset="UTF-8" />
   </component>
 </project>

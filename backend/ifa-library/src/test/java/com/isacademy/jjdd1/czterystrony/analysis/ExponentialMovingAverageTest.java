@@ -25,12 +25,21 @@ public class ExponentialMovingAverageTest {
     @Test
     public void average_for_only_1_value_should_be_equal_this_value() {
         exponentialMovingAverage.add(TestAverages.TEST_VALUE);
+        // TODO check is value added to array
+        assertThat(exponentialMovingAverage.window).isNotEmpty().hasSize(1);
         assertThat(exponentialMovingAverage.getAverage()).isEqualTo(TestAverages.TEST_VALUE);
+
+
     }
 
     @Test
     public void should_failure_when_negative_period_is_given() {
         assertThatExceptionOfType(IllegalArgumentException.class)
-                .isThrownBy(() -> new SimpleMovingAverage(TestAverages.NEGATIVE_PERIOD));
+                // TODO change SMA to EMA constructor
+                .isThrownBy(() -> new ExponentialMovingAverage(TestAverages.NEGATIVE_PERIOD));
     }
+
 }
+
+
+
