@@ -3,6 +3,8 @@ package com.infoshare;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -12,9 +14,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static org.junit.Assert.assertTrue;
 
+
+
 public class FutrzakTest {
 
-    private static final String PAGE_URL = "http://app.bimbom.jdqz1.is-academy.pl/";
+    private static final String PAGE_URL = "http://app.bimbom.jdqz1.is-academy.pl";
 
     private WebDriver driver;
 
@@ -23,7 +27,7 @@ public class FutrzakTest {
     @Before
     public void setUp() {
 
-        System.setProperty("webdriver.chrome.driver", "/home/tomaszn/IdeaProjects/jdqz1-bimbom/autoTests/src/test/resources/drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         myPages = PageFactory.initElements(driver, MyPages.class);
