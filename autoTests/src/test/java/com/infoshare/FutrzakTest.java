@@ -6,9 +6,14 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.net.MalformedURLException;
+import java.net.URL;
 
 import static org.junit.Assert.assertTrue;
 
@@ -21,11 +26,19 @@ public class FutrzakTest {
     private MyPages myPages;
 
     @Before
-    public void setUp() {
+    public void setUp() throws MalformedURLException {
 
-        System.setProperty("webdriver.chrome.driver", "/home/tomaszn/IdeaProjects/jdqz1-bimbom/autoTests/src/test/resources/drivers/chromedriver");
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        System.setProperty("webdriver.chrome.driver", "/src/test/resources/drivers/chromedriver");
+        String buildEnv = System.getProperty("buildEnv");
+        // driver = new ChromeDriver();
+        if(buildEnv.equals("CI")){
+            driver = new RemoteWebDriver(new URL("http://localhost:440.44/wd/hub/"), new DesiredCapabilities());
+        }
+        if(buildEnv.equals("DEV")){
+            driver = new ChromeDriver();
+        }
+
+        //driver.manage().window().maximize();
         myPages = PageFactory.initElements(driver, MyPages.class);
         driver.get(PAGE_URL);
 
