@@ -18,6 +18,9 @@
   <profiles>
     <profile>
       <id>CI</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
         <properties>
           <env>CI</env>
         </properties>

@@ -28,7 +28,7 @@ public class FutrzakTest {
     @Before
     public void setUp() throws MalformedURLException {
 
-        System.setProperty("webdriver.chrome.driver", "/src/test/resources/drivers/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver");
         String buildEnv = System.getProperty("buildEnv");
         // driver = new ChromeDriver();
         if(buildEnv.equals("CI")){
