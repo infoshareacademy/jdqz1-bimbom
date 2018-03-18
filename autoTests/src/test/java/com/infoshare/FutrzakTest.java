@@ -32,7 +32,7 @@ public class FutrzakTest {
         String buildEnv = System.getProperty("buildEnv");
         // driver = new ChromeDriver();
         if(buildEnv.equals("CI")){
-            driver = new RemoteWebDriver(new URL("http://localhost:440.44/wd/hub/"), new DesiredCapabilities());
+            driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub/"), new DesiredCapabilities());
         }
         if(buildEnv.equals("DEV")){
             driver = new ChromeDriver();
