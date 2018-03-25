@@ -1,4 +1,4 @@
-package com.infoshare;
+package com.infoshare.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

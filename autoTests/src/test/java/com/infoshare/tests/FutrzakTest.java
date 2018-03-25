@@ -1,5 +1,6 @@
-package com.infoshare;
+package com.infoshare.tests;
 
+import com.infoshare.pages.MyPages;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -18,6 +19,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import static org.junit.Assert.assertTrue;
+
+
 
 public class FutrzakTest {
 

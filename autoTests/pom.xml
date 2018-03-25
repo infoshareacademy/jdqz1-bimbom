@@ -47,7 +47,7 @@
             </property>
           </systemProperties>
           <includes>
-            <include>com.infoshare.*Test*</include>
+            <include>com.infoshare.suiteTest.FeatureTestSuite</include>
           </includes>
         </configuration>
       </plugin>
