@@ -17,13 +17,15 @@
 <%@include file="navbar.jsp" %>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-2 sidebar">
-            <ul class="nav nav-sidebar">
-                <li><a href="<c:url value = "/4analysis/notowania/${investFund.id}"/>">Notowania</a></li>
-                <li class="active"><a href="<c:url value = "/4analysis/analiza/zigzag/${investFund.id}"/>">Analiza
-                    techniczna<span
-                            class="sr-only">(current)</span></a></li>
-            </ul>
+        <div id="panel_boczny_div">
+            <div class="col-md-2 sidebar">
+                <ul class="nav nav-sidebar">
+                    <li><a href="<c:url value = "/4analysis/notowania/${investFund.id}"/>">Notowania</a></li>
+                    <li class="active"><a href="<c:url value = "/4analysis/analiza/zigzag/${investFund.id}"/>">Analiza
+                        techniczna<span
+                                class="sr-only">(current)</span></a></li>
+                </ul>
+            </div>
         </div>
         <div class="col-md-8 col-md-offset-2 main">
             <div class="row">
